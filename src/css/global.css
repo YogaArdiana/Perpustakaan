@@ -1,0 +1,240 @@
+.content{
+    height: 100vh;
+    display: flex;
+    background: #e2e2e2;
+    background-size: 360% 360%;
+    animation: gradient-animation 48s ease infinite;
+}
+
+.sidebar{
+    width: 30%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.sidebar-ctr{
+    width: 90%;
+    height: 100%;
+    border-right: 1px solid #382162;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-sidebar, .user-sidebar{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.user-sidebar{
+    border-bottom: #0f0f0f 3px solid;
+}
+
+
+.title-in, .user-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    
+    border-radius: 4px !important;
+    position: relative;
+}
+.logout-btn{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+.ttl-user{
+    width: 60%;
+}
+
+.ttl-user h5{
+    white-space: nowrap;  /* Menghindari teks turun ke bawah saat panjang */
+    overflow: hidden;    /* Menghindari tampilan teks yang melebihi kotak */
+    text-overflow: ellipsis;  /* Menambahkan tanda elipsis (...) saat teks melebihi kotak */
+}
+
+.icon-title, .icon-user{
+    width: 20%;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 12px;
+}
+
+.icon-title i{
+    font-size: 30px;
+}
+.icon-user .img-user{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.icon-user .img-user img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.content-dashboard{
+    width: 70%;
+    /* backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%); */
+    background-color: #eeeeee;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+
+.nav-sidebar{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.nav-link-in{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 12px;
+    transition: .3s ease-in-out;
+}
+.nav-link-in:hover{
+    background-color: #3a3a3a;
+}
+
+.nav-link-in:hover i, .nav-link-in:hover span{
+    color: #fff !important;
+}
+
+.actives{
+    background-color: #0f0f0f;
+    color: #fff !important;
+}
+
+.nav-link-in:hover i, .nav-link-in:hover span{
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+/* gradient */
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+/* gradient end */
+
+
+.pinjam-ctr{
+    height: 100vh;
+}
+
+.navbar-color{
+    background-color:#ffffff !important ;
+}
+
+.content-pinjam{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-pinjam{
+    width: 60%;
+    height: max-content;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.img-buku{
+    width: 30%;
+    height: 20%;
+}
+
+.img-buku img{
+    width: 100%;
+}
+
+.date-colapse{
+    display: flex;
+    gap: 3px;
+}
+
+.content-lihat-buku{
+    height: max-content;
+}
+
+.jummbotron{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: end;
+    transform-style: preserve-3d !important;
+}
+
+.img-lihat-buku{
+    width: 150px;
+    border: #382162 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.img-lihat-buku img{
+    width: 100%;
+}
+
+.inner-jumbotron{
+    display: flex;
+    gap: 10px;
+    transform: translateZ(20px) perspective(90px) !important;
+}
+
+.keterangan{
+    display: flex;
+    align-items: end;
+}
+.table-ctr{
+    height: 50vh;
+    overflow: auto;
+}
+.table-ctr-2{
+    height: 100%;
+    overflow: auto;
+}
+
+.modalubah{
+        position: absolute;
+}

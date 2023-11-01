@@ -1,0 +1,239 @@
+
+
+.content-dashboard-ctr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.cards:hover{
+    width: 60%;
+    transform: scale(1.1);
+}
+.cards span{
+    font-size: 30px;
+}
+
+.card-1{
+    background-color: #ffffff;
+    color: #202020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-2{
+    background-color: #424242;
+    color: #cfcfcf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* table */
+
+
+
+
+
+/* search */
+.search{
+    outline: none;
+    border: none;
+}
+
+.search-ctr{
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+.header ul{
+    list-style: none;
+}
+.header li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.box-content{
+    height: 80%;
+    overflow: auto;
+}
+.data-buku{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.data-pinjams{
+    height: 100%;
+    overflow: auto;
+}
+
+.status{
+    text-transform: capitalize;
+}
+
+
+*::-webkit-scrollbar-track
+{
+	background-color: #f5f5f500;
+    padding-right: 2px;
+}
+
+*::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #f5f5f500;
+    padding-right: 2px;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #c9c9c9;
+    border-radius: 2px;
+
+}
+
+.card-buku{
+    background-color: transparent;
+    width: 25%;
+    height: max-content;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: -1px -1px 32px -17px rgba(0,0,0,0);
+    -webkit-box-shadow: -1px -1px 32px -17px rgba(0,0,0,0);
+    -moz-box-shadow: -1px -1px 32px -17px rgba(0,0,0,0);
+    transition: all .5s;
+}
+
+.card-buku:hover{
+    box-shadow: -1px -1px 32px -17px rgba(0,0,0,0.8);
+    -webkit-box-shadow: -1px -1px 32px -17px rgba(0,0,0,0.8);
+    -moz-box-shadow: -1px -1px 32px -17px rgba(0,0,0,0.8);
+}
+.descript-buku{
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Mengatur jumlah baris yang diizinkan */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Optional: Menambahkan elipsis (...) untuk menunjukkan teks terpotong */
+}
+
+.img-buku{
+    width: 100%;
+    height: 190px;
+    background-color: #fff;
+}
+
+.img-buku img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-full{
+    width: 100%;
+}
+
+
+.mixitup-control-active{
+    background-color: #202020!important;
+    color: #fff !important;
+}
+/* search end */
+
+
+
+/* tambah buku  */
+.tambah-buku{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.sec-1{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.sec-2{
+    width: 40%;
+}
+
+.img-ctr{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #424242;
+    cursor: pointer;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.img-ctr img{
+    width: 100%;
+}
+
+.img-ctr{
+    object-fit: cover;
+    width: 90%;
+}
+
+
+.card-data{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: all .5s;
+    box-shadow: -1px -1px 32px -17px rgba(0,0,0,0);
+    -webkit-box-shadow: -1px -1px 32px -17px rgba(0,0,0,0);
+    -moz-box-shadow: -1px -1px 32px -17px rgba(0,0,0,0);
+}
+
+.card-data:hover{
+    box-shadow: -1px -1px 32px -17px rgba(0,0,0,0.8);
+-webkit-box-shadow: -1px -1px 32px -17px rgba(0,0,0,0.8);
+-moz-box-shadow: -1px -1px 32px -17px rgba(0,0,0,0.8);
+}
+
+.card-data-img{
+    width: 130px;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #a1a1a1;
+}
+.w-5{
+    width: 10%;
+}
+
+.table{
+    background-color: transparent !important;
+}
+
+.card-data-img img{
+    object-fit: cover;
+    width: 100%;
+}
+/* tambah buku end */

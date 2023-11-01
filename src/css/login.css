@@ -1,0 +1,94 @@
+  body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }  
+  
+  .login {
+    min-height: 100vh;
+  }
+  
+  .bg-grad {
+    background: linear-gradient(138deg,#97c158,#4ade88,#960396,#c54337,#20218c);
+    background-size: 300% 300%;
+    animation: gradient-animation 35s ease infinite;
+  }
+  
+  .login-heading {
+    font-weight: 300;
+  }
+
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .form-password{
+    position: relative;
+  }
+  .eye-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: scale(1);
+    transition: all .2s;
+  }
+
+  .eye-icon:hover{
+    transform: scale(1.1);
+  }
+
+  .buku-ctr{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sampul-buku{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d !important;
+    background-color: rgba(126, 126, 126, 0.219);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+  
+  .glass{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ffffff1a;
+    transform: translateZ(150px) perspective(90px) !important;
+  }
+  .sampul-buku img{
+    width: 100%;
+    filter: drop-shadow(-1px 100px 63px #1a081a63);
+    animation: mengambang backwards infinite 2s;
+  }
+
+  @keyframes mengambang {
+      0%{
+        transform: translateZ(70px) translateY(10px);
+      }
+      50%{
+        transform: translateZ(70px) translateY(0px);
+      }
+      100%{
+        transform: translateZ(70px) translateY(10px);
+      }
+
+  }
